@@ -29,6 +29,7 @@ Plug 'sirver/ultisnips'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rails'
 Plug 'mxw/vim-jsx'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'leafgarland/typescript-vim'
 Plug 'rust-lang/rust.vim'
@@ -43,6 +44,7 @@ Plug 'moll/vim-node'                , {'for': 'javascript*'}
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'haishanh/night-owl.vim'
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
 
 call plug#end()
 
@@ -539,6 +541,23 @@ let g:UltiSnipsJumpBackwardTrigger="<S-b>"
 
 " For Jsx
 let g:jsx_ext_required = 1
+
+" For Markdown
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
+" For Markdown preview
+"let g:instant_markdown_slow = 1
+"let g:instant_markdown_autostart = 0
+"let g:instant_markdown_open_to_the_world = 1
+"let g:instant_markdown_allow_unsafe_content = 1
+"let g:instant_markdown_allow_external_content = 0
+"let g:instant_markdown_mathjax = 1
+"let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
+"let g:instant_markdown_autoscroll = 0
+"let g:instant_markdown_port = 8888
+"let g:instant_markdown_python = 1
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
