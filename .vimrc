@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main'  }
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
+Plug 'manasthakur/vim-commentor'
 Plug 'junegunn/fzf'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
@@ -38,11 +38,8 @@ Plug 'prettier/vim-prettier'
 Plug 'danro/rename.vim'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
-Plug 'itchyny/calendar.vim'
 Plug 'othree/html5.vim'             , {'for': ['html', '*jsx']}
 Plug 'moll/vim-node'                , {'for': 'javascript*'}
-Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'haishanh/night-owl.vim'
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
 
@@ -306,9 +303,6 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Remap VIM 0 to first non-blank character
-map 0 ^
-
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
@@ -534,9 +528,9 @@ highlight CursorLineNr term=bold ctermfg=11 gui=bold guifg=#ce6f8f
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Trigger configuration. Do not use <tab> if you use YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<S-l>"
-let g:UltiSnipsJumpForwardTrigger="<S-f>"
-let g:UltiSnipsJumpBackwardTrigger="<S-b>"
+let g:UltiSnipsExpandTrigger="<C-S-t>"
+let g:UltiSnipsJumpForwardTrigger="<C-S-f>"
+let g:UltiSnipsJumpBackwardTrigger="<C-S-b>"
 
 
 " For Jsx

@@ -32,6 +32,7 @@ font-1 = Hack Nerd Font:style=Regular:pixelsize=18:antialias=true;3
 font-2 = Font Awesome 5 Free Solid:pixelsize=12;2
 font-3 = Hack Nerd Font:style=Regular:pixelsize=14:antialias=true;3
 font-4 = Hack Nerd Font:style=Regular:pixelsize=20:antialias=true;5
+font-5 = Font Awesome 5 Free Solid:pixelsize=16:antialias=true;3
 
 modules-left = i3 xwindow
 modules-right = spotify previous playpause next cpu memory audio backlight wlan battery date powermenu
@@ -68,11 +69,11 @@ fuzzy-match = true
 
 ws-icon-default = "  "
 ws-icon-0 = "0;0  "
-ws-icon-1 = "1;%{T5}%{T-}  "
-ws-icon-2 = "2;%{T2}﬏%{T-}  "
-ws-icon-3 = "3;%{T4} %{T-} "
-ws-icon-4 = "4;%{T4} %{T-}"
-ws-icon-5 = "5;5  "
+ws-icon-1 = "1;%{T6}%{T-}"
+ws-icon-2 = "2;%{T5}%{T-}  "
+ws-icon-3 = "3;%{T2}﬏%{T-}  "
+ws-icon-4 = "4;%{T4} %{T-} "
+ws-icon-5 = "5;%{T4} %{T-}"
 ws-icon-6 = "6;6  "
 ws-icon-7 = "7;7  "
 ws-icon-8 = "8;%{T4} %{T-} "
